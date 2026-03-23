@@ -1,0 +1,26 @@
+{
+  "name": "electron-health",
+  "version": "1.0.0",
+  "description": "Détecte et nettoie les apps Electron de votre Mac",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "electron-health": "./index.js"
+  },
+  "files": ["index.js", "src", "README.md", "package.json"],
+  "os": ["darwin"],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["electron", "mac", "cleaner", "macos"],
+  "author": "Baptiste",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "inquirer": "^9.3.7",
+    "ora": "^8.1.1"
+  }
+}
