@@ -12,11 +12,15 @@
   "engines": {
     "node": ">=18"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node --check index.js && node --check src/cli.js"
   },
   "keywords": ["electron", "mac", "cleaner", "macos"],
-  "author": "Baptiste",
+  "author": "besty",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.4.1",
